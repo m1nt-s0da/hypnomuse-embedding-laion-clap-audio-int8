@@ -287,7 +287,7 @@ wheels = [
 ]
 
 [[package]]
-name = "hypnomuse-embedding-laion-larger-clap-general-audio-int8"
+name = "hypnomuse-embedding-laion-clap-audio-int8"
 version = "0.0.2"
 source = { editable = "." }
 dependencies = [
