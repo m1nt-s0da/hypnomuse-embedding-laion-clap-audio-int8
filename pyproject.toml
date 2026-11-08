@@ -1,0 +1,37 @@
+[project]
+name = "hypnomuse-embedding-laion-larger-clap-general-audio-int8"
+version = "0.0.1"
+description = "Add your description here"
+readme = "README.md"
+license = "MIT"
+license-files = [
+    "LICENSE",
+    "NOTICE",
+    "src/hypnomuse/embedding/laion_larger_clap_general/audio/int8/model/LICENSE-APACHE-2.0.txt",
+]
+requires-python = ">=3.14"
+dependencies = [
+    "onnxruntime>=1.31.1",
+    "torch>=2.15.0",
+    "transformers>=5.22.1",
+]
+
+[project.scripts]
+convert = "hypnomuse.embedding.laion_larger_clap_general.audio.int8._convert:_convert_main"
+
+[build-system]
+requires = ["uv_build>=0.13.6,<0.14.0"]
+build-backend = "uv_build"
+
+[tool.uv.build-backend]
+module-name = "hypnomuse.embedding.laion_larger_clap_general.audio.int8"
+
+[dependency-groups]
+dev = [
+    "audioop-lts>=0.2.2",
+    "dotenv>=0.9.9",
+    "onnx>=1.23.2",
+    "onnxscript>=0.7.2",
+    "pydub>=0.25.1",
+    "pytest>=9.2.0",
+]

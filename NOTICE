@@ -1,0 +1,25 @@
+hypnomuse-embedding-laion-larger-clap-general-audio-int8
+
+The source code of this library, excluding the third-party model files
+identified below, is distributed under the MIT License. See LICENSE.
+
+Third-party model files
+-----------------------
+
+The files in
+src/hypnomuse/embedding/laion_larger_clap_general/audio/int8/model/ are
+derived from the LAION larger_clap_general model:
+
+  https://huggingface.co/laion/larger_clap_general
+
+The Hugging Face model card declares this model to be licensed under the
+Apache License, Version 2.0. The model.onnx file is a converted and
+dynamically INT8-quantized derivative of the upstream model; the
+preprocessor_config.json file contains the corresponding preprocessing
+configuration. These files are subject to the Apache License, Version 2.0,
+whose text is included alongside them as LICENSE-APACHE-2.0.txt.
+
+The upstream repository revision reviewed for this notice is
+ada0c23a36c4e8582805bb38fec3905903f18b41. No separate LICENSE or NOTICE file
+was present in that repository revision; the license identification above is
+based on the model card metadata.
