@@ -8,10 +8,10 @@ from dotenv import load_dotenv
 from pydub import AudioSegment
 from transformers import ClapModel
 
-from hypnomuse.embedding.laion_larger_clap_general.audio.int8._model_loaders import (
+from hypnomuse.embedding.laion_clap.audio.int8._model_loaders import (
     load_feature_extractor,
 )
-from hypnomuse.embedding.laion_larger_clap_general.audio.int8._inference import (
+from hypnomuse.embedding.laion_clap.audio.int8._inference import (
     get_audio_features,
     load_onnx_model,
 )

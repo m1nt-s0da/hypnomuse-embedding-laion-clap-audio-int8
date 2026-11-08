@@ -5,7 +5,7 @@ import onnx
 import onnxruntime
 import torch
 
-import hypnomuse.embedding.laion_larger_clap_general.audio.int8._convert as convert_module
+import hypnomuse.embedding.laion_clap.audio.int8._convert as convert_module
 
 
 class FakeClapModel(torch.nn.Module):

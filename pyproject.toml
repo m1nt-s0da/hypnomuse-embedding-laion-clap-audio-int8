@@ -7,7 +7,7 @@ license = "MIT"
 license-files = [
     "LICENSE",
     "NOTICE",
-    "src/hypnomuse/embedding/laion_larger_clap_general/audio/int8/model/LICENSE-APACHE-2.0.txt",
+    "src/hypnomuse/embedding/laion_clap/audio/int8/model/LICENSE-APACHE-2.0.txt",
 ]
 requires-python = ">=3.14"
 dependencies = [
@@ -17,14 +17,14 @@ dependencies = [
 ]
 
 [project.scripts]
-convert = "hypnomuse.embedding.laion_larger_clap_general.audio.int8._convert:_convert_main"
+convert = "hypnomuse.embedding.laion_clap.audio.int8._convert:_convert_main"
 
 [build-system]
 requires = ["uv_build>=0.13.6,<0.14.0"]
 build-backend = "uv_build"
 
 [tool.uv.build-backend]
-module-name = "hypnomuse.embedding.laion_larger_clap_general.audio.int8"
+module-name = "hypnomuse.embedding.laion_clap.audio.int8"
 
 [dependency-groups]
 dev = [

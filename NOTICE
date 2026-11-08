@@ -7,10 +7,10 @@ Third-party model files
 -----------------------
 
 The files in
-src/hypnomuse/embedding/laion_larger_clap_general/audio/int8/model/ are
-derived from the LAION larger_clap_general model:
+src/hypnomuse/embedding/laion_clap/audio/int8/model/ are
+derived from the LAION CLAP model:
 
-  https://huggingface.co/laion/larger_clap_general
+  https://huggingface.co/laion/clap-htsat-unfused
 
 The Hugging Face model card declares this model to be licensed under the
 Apache License, Version 2.0. The model.onnx file is a converted and
@@ -19,7 +19,6 @@ preprocessor_config.json file contains the corresponding preprocessing
 configuration. These files are subject to the Apache License, Version 2.0,
 whose text is included alongside them as LICENSE-APACHE-2.0.txt.
 
-The upstream repository revision reviewed for this notice is
-ada0c23a36c4e8582805bb38fec3905903f18b41. No separate LICENSE or NOTICE file
-was present in that repository revision; the license identification above is
+The upstream repository revision referenced for this notice is
+8fa0f1c6d0433df6e97c127f64b2a1d6c0dcda8a. The license identification above is
 based on the model card metadata.

@@ -7,7 +7,8 @@ uv run convert
 ```
 
 By default, the converter uses `laion/clap-htsat-unfused` and writes
-`model.onnx` under `src/hypnomuse/embedding/clap/audio/int8/model/`.
+`model.onnx` under
+`src/hypnomuse/embedding/laion_clap/audio/int8/model/`.
 Specify a different model or output path with `--model_id` and `--output`:
 
 ```shell
@@ -36,7 +37,7 @@ an arbitrary accuracy threshold.
 ## Licensing
 
 The library source is MIT licensed; the model files under
-`src/hypnomuse/embedding/laion_larger_clap_general/audio/int8/model/` are
-derived from `laion/larger_clap_general` and are distributed under the
+`src/hypnomuse/embedding/laion_clap/audio/int8/model/` are
+derived from `laion/clap-htsat-unfused` and are distributed under the
 upstream model card's Apache-2.0 license. See [LICENSE](LICENSE) and
 [NOTICE](NOTICE); the model directory contains the Apache-2.0 license text.
