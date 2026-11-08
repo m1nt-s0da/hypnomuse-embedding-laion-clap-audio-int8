@@ -1,11 +1,12 @@
 from ._model_loaders import load_feature_extractor
 from ._inference import get_audio_features, load_onnx_model
 import numpy as np
+from typing_extensions import deprecated
 
-__all__ = ["LaionLargerClapGeneralAudioInt8"]
+__all__ = ["LaionClapAudioInt8", "LaionLargerClapGeneralAudioInt8"]
 
 
-class LaionLargerClapGeneralAudioInt8:
+class LaionClapAudioInt8:
     def __init__(self):
         self._feature_extractor = load_feature_extractor()
         self._model = load_onnx_model()
@@ -28,3 +29,7 @@ class LaionLargerClapGeneralAudioInt8:
             waveform, sampling_rate=sampling_rate
         )
         return get_audio_features(self._model, input_feature, is_longer)
+
+
+@deprecated("Use LaionClapAudioInt8 instead")
+class LaionLargerClapGeneralAudioInt8(LaionClapAudioInt8): ...

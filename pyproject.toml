@@ -1,6 +1,6 @@
 [project]
 name = "hypnomuse-embedding-laion-clap-audio-int8"
-version = "0.0.2"
+version = "0.0.3"
 description = "Add your description here"
 readme = "README.md"
 license = "MIT"
